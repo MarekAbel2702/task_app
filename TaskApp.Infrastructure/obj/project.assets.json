@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "TaskApp.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "TaskApp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TaskApp.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaskApp.Application.dll": {}
+        }
+      },
+      "TaskApp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/TaskApp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaskApp.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TaskApp.Application/1.0.0": {
+      "type": "project",
+      "path": "../TaskApp.Application/TaskApp.Application.csproj",
+      "msbuildProject": "../TaskApp.Application/TaskApp.Application.csproj"
+    },
+    "TaskApp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TaskApp.Domain/TaskApp.Domain.csproj",
+      "msbuildProject": "../TaskApp.Domain/TaskApp.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "TaskApp.Application >= 1.0.0",
+      "TaskApp.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Janek\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Janek\\Desktop\\csharp_app\\TaskApp\\TaskApp.Infrastructure\\TaskApp.Infrastructure.csproj",
+      "projectName": "TaskApp.Infrastructure",
+      "projectPath": "C:\\Users\\Janek\\Desktop\\csharp_app\\TaskApp\\TaskApp.Infrastructure\\TaskApp.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\Janek\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Janek\\Desktop\\csharp_app\\TaskApp\\TaskApp.Infrastructure\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Janek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\Janek\\Desktop\\csharp_app\\TaskApp\\TaskApp.Application\\TaskApp.Application.csproj": {
+              "projectPath": "C:\\Users\\Janek\\Desktop\\csharp_app\\TaskApp\\TaskApp.Application\\TaskApp.Application.csproj"
+            },
+            "C:\\Users\\Janek\\Desktop\\csharp_app\\TaskApp\\TaskApp.Domain\\TaskApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\Janek\\Desktop\\csharp_app\\TaskApp\\TaskApp.Domain\\TaskApp.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
