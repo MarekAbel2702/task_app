@@ -16,7 +16,7 @@ namespace TaskApp.Domain.Entities
         public Guid OwnerId { get; set; }
         public User Owner { get; set; } = default!;
 
-        public ICollection<ProjectTask> Tasks { get; set; } = new List<ProjectTask>();
-        public ICollection<Team> Teams { get; set; } = new List<Team>();
+        public List<ProjectTask> Tasks { get; set; } = new List<ProjectTask>();
+        public List<Team> Teams { get; set; } = new List<Team>();
     }
 }

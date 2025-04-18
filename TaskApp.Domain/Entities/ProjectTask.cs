@@ -25,6 +25,6 @@ namespace TaskApp.Domain.Entities
         public Guid ProjectId { get; set; }
         public Project Project { get; set; } = default!;
 
-        public ICollection<Comment> Comments { get; set; } = new List<Comment>();
+        public List<Comment> Comments { get; set; } = new List<Comment>();
     }
 }

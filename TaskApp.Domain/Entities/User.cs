@@ -14,7 +14,8 @@ namespace TaskApp.Domain.Entities
         public string PasswordHash { get; set; } = default!;
         public string Role { get; set; } = "User";
 
-        public ICollection<Project> Projects { get; set; } = new List<Project>();
-        public ICollection<Comment> Comments { get; set; } = new List<Comment>();
+        public List<Project> OwnedProjects { get; set; } = new List<Project>();
+        public List<Team> Teams { get; set; } = new List<Team>();
+        public List<Comment> Comments { get; set; } = new List<Comment>();
     }
 }

@@ -11,7 +11,7 @@ namespace TaskApp.Domain.Entities
         public Guid Id { get; set; }
         public string Name { get; set; } = default!;
 
-        public ICollection<User> Members { get; set; } = new List<User>();
-        public ICollection<Project> Projects { get; set; } = new List<Project>();
+        public List<User> Members { get; set; } = new List<User>();
+        public List<Project> Projects { get; set; } = new List<Project>();
     }
 }

@@ -1,0 +1,16 @@
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\bin\Debug\net8.0\TaskApp.Application.deps.json
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\bin\Debug\net8.0\TaskApp.Application.dll
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\bin\Debug\net8.0\TaskApp.Application.pdb
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\bin\Debug\net8.0\TaskApp.Domain.dll
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\bin\Debug\net8.0\TaskApp.Domain.pdb
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\obj\Debug\net8.0\TaskApp.Application.csproj.AssemblyReference.cache
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\obj\Debug\net8.0\TaskApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\obj\Debug\net8.0\TaskApp.Application.AssemblyInfoInputs.cache
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\obj\Debug\net8.0\TaskApp.Application.AssemblyInfo.cs
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\obj\Debug\net8.0\TaskApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\obj\Debug\net8.0\TaskApp.Application.sourcelink.json
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\obj\Debug\net8.0\TaskApp.Application.csproj.CopyComplete
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\obj\Debug\net8.0\TaskApp.Application.dll
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\obj\Debug\net8.0\refint\TaskApp.Application.dll
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\obj\Debug\net8.0\TaskApp.Application.pdb
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Application\obj\Debug\net8.0\ref\TaskApp.Application.dll
