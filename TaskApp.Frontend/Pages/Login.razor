@@ -1,0 +1,50 @@
+﻿@page "/login"
+@using TaskApp.Frontend.Services
+@using TaskApp.Frontend.Pages
+@inject HttpClient Http
+@inject AuthService Auth
+@inject NavigationManager Nav
+
+<h3>Zaloguj się</h3>
+
+<input @bind="email" placeholder="Email"  />
+<br />
+<input type="password" @bind="password" placeholder="Hasło" />
+<br />
+<button @onclick="LoginResult">Zaloguj</button>
+
+@if (!string.IsNullOrEmpty(error))
+{
+    <p style="color: red">@error</p>
+}
+
+@code {
+    string email = "";
+    string password = "";
+    string error = "";
+
+    async Task LoginResult()
+    {
+        var response = await Http.PostAsJsonAsync("/auth/login", new
+        {
+            email,
+            password
+        });
+
+        if (response.IsSuccessStatusCode)
+        {
+            var result = await response.Content.ReadFromJsonAsync<LoginResponse>();
+            await Auth.SaveToken(result!.Token);
+            Nav.NavigateTo("/teams");
+        }
+        else
+        {
+            error = "Błędne dane logowania";
+        }
+    }
+    public class LoginResponse
+    {
+        public string Token { get; set; } = "";
+    }
+}
+

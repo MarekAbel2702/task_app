@@ -1,0 +1,10 @@
+﻿@namespace TaskApp.Frontend
+
+<Router AppAssembly="@typeof(App).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData"/>
+    </Found>
+    <NotFound>
+        <h1>Nie znaleziono strony</h1>
+    </NotFound>
+</Router>

@@ -174,3 +174,6 @@ C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Api\bin\Debug\net8.0\TaskApp.A
 C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Api\bin\Debug\net8.0\TaskApp.Api.pdb
 C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Api\obj\Debug\net8.0\TaskApp.Api.genruntimeconfig.cache
 C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Api\obj\Debug\net8.0\ref\TaskApp.Api.dll
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Janek\Desktop\csharp_app\TaskApp\TaskApp.Api\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll

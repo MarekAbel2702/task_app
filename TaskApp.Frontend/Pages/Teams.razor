@@ -1,0 +1,44 @@
+﻿@page "/teams"
+@using TaskApp.Frontend.Services
+@inject HttpClient Http
+@inject AuthService Auth
+@inject NavigationManager Nav
+
+<h3>Zespoły</h3>
+
+@if (teams is null)
+{
+    <p>Ładowanie...</p>
+}
+else
+{
+  <ul>
+        @foreach (var team in teams)
+        {
+             <li>@team.Name</li>
+        }
+    </ul>  
+}
+
+@code {
+    List<Team>? teams;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var token = await Auth.GetToken();
+        if (string.IsNullOrEmpty(token))
+        {
+            Nav.NavigateTo("/login");
+            return;
+        }
+
+        Http.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+        teams = await Http.GetFromJsonAsync<List<Team>>("/teams");
+    }
+
+    public class Team
+    {
+        public Guid Id { get; set; }
+        public string Name { get; set; } = "";
+    }
+}
